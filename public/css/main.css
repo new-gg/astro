@@ -7,31 +7,51 @@ body {
   margin: 0;
 }
 
-nav {
-    background-color: blueviolet;
-    position:fixed;
-    width:100%;
-    box-shadow: 0 0 10px black;
-    border-radius: 12px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(43, 0, 60);
+  position:fixed;
+  width:100%;
+  border-radius:10px;
 }
 
-.logo {
-    height: 60px;
-    width: 60px;
+.brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.cons {
-    display: flex;
-    align-items: center;
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin:15px;
+  transition:0.5s;
+}
+
+.nav-links li:hover {
+  transform:scale(1.1);
   }
 
-.navlinks {
-   text-decoration: none;
-   color:white;
-   font-size: 16px;
-   margin: 0px 10px;
-   transition: 0.3s;
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: 1s;
 }
-.navlinks:hover {
-    transform: scale(1.1);
+
+.nav-links a:hover {
+transform:scale(1.1);
+}
+
+input {
+  width: 200px;
+  box-shadow: 0 0 20px black;
+  
 }
