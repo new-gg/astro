@@ -5,6 +5,7 @@
 <h2 align="center">Astro is a upcoming AIO proxy website that runs on fast speeds on a VPS</h2>
 
 <h1 align="center">Features:</h1>
+- mp
 - Speedy proxy loading times
 - Games for you to enjoy
 - Apps for if your lazy to search
