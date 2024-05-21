@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://kit.fontawesome.com/52676eb1e5.js" crossorigin="anonymous"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro | Find the circumfrence of a circle</title>
+    <script src="/lf.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="Icons/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://arc.io/widget.min.js#KpYQhCTB"></script>
+    <link href="" rel="stylesheet" type="text/css">
+
 </head>
-<body>
-    
+
+<body class="Settingspgg">
+    <div class="navbar">
+        <img src="Icons/logo.png" alt="Sunset Logo " id="logo">
+        <a href="/index.html"><i class="fa-solid fa-house fa-2xl">&nbsp;</i>Home</a>
+        <a href="/games.html"><i class="fa-solid fa-gamepad fa-2xl">&nbsp;</i>Apps</a>
+        <a href="/discord.html"><i class="fa-brands fa-discord fa-2xl">&nbsp;</i>Discord</a>
+        <a href="/roadmap.html"><i class="fa-solid fa-map fa-2xl">&nbsp;</i>Roadmap</a>
+        <a href="/settings.html"><i class="fa-solid fa-gear fa-2xl">&nbsp;</i>Settings</a>
+        <a href="/developers&partners.html"><i class="fa-solid fa-users fa-2xl">&nbsp;</i>Developers</a>
+    </div>
+    <h1 class="STXT">Settings</h1>
+
+    <div class="settingspagepleasework">
+
+        <div class="SButtonsss">
+
+            <button class="APB" onclick="changeTab(0)">Apperance</button>
+            <button class="CLB" onclick="changeTab(1)">Cloaking</button>
+            <button class="PRB" onclick="changeTab(2)">Proxy</button>
+
+        </div>
+
+        <div class="settingsalign">
+
+            <div id="tab0" class="tab active">
+                <div class="Changetheeeme card">
+                    <a class="Baseofsbutton">
+                        <p class="SBT"> Change Theme </p>
+                        <button id="changeGradient" class="gradientButton">Change Theme</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="tab1" class="tab">
+
+                <div class="paniicbuttonn card">
+                    <a class="Baseofsbutton">
+                        <p class="SBT"> Panic Button<br>
+                            <p class="rtabtxt"> (Redirects to about:blank) </p>
+                        </p>
+                        <button id="open-tab-btn" class="Panbutton"><a href="about:blank" target="_blank"
+                                style="color: rgb(255, 255, 255);">Click Me</a></button>
+                    </a>
+                </div>
+
+                <div class="Selecthotkeyyyyy card">
+                    <p class="SBT">Select a Hotkey</p>
+                    <p class="rtabtxt">(To quick redirect to chosen URL)<br>(Defaults to google.com)</p>
+                    <input type="text" id="hotkey-input" placeholder="Press a key...">
+                    <br>
+                    <button id="change-hotkey-btn">Change Hotkey</button>
+                </div>
+
+                <div class="redirectchoice card">
+                    <p class="SBT">Choose Redirect</p>
+                    <p class="rtabtxt">(Paste in URL you want hotkey to redirect to)</p>
+                    <input type="text" id="redirect-url-input" placeholder="Paste URL here...">
+                    <br>
+                    <button id="change-URL-btn">Change Redirect URL</button>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab">
+                <div class="prxyyytype card">
+                    <p class="SBT">Browser Type</p>
+                    <select id="searchtype" class="presetSelect" name="switch Theme">
+                        <option value="https://google.com/search?q=%s">Google</option>
+                        <option value="https://www.bing.com/search?q=%s">Bing
+                        </option>
+                        <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
+                    </select>
+                    <button class="Panbutton" onclick="switchSearch(); location.reload();">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script>
+        let tabs = Array.from(document.getElementsByClassName('tab'));
+
+        function changeTab(index) {
+            tabs.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+            });
+        }
+    </script>
+    <script src="settings.js" defer></script>
+
+
+    <script src="hotkey.js" defer></script>
+
 </body>
+
 </html>
