@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Math 4 U</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/52676eb1e5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Quicksand:wght@300..700&display=swap');
     body {
       background-color: #222;
       color: #fff;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Be Vietnam Pro', sans-serif;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -41,12 +43,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 570px;
 }
 
 #game-container iframe {
   width: 80%;
-  height: 80%;
+  height: 90%;
   border: none;
   border-radius:10px;
   margin-bottom: 0px;
@@ -148,68 +150,47 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-.navbar-container {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.navbar-trigger {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.navbar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #444;
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease;
-}
-
-.navbar a {
-    display: block;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navbar a:hover {
-    background-color: #555;
-}
-
-.navbar-container:hover .navbar {
-    height: 150px; /* Adjust the height as needed to fit all the links */
+.menu {
+  width:80%;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  border-radius:15px;
+  background-color:#1f1f1f;
 }
   </style>
 </head>
 
 <body>
   <div id="game-container">
-    <iframe title="" id="gameFramey" src=""></iframe>
+    <iframe class="fc" title="" id="gameFramey" src=""></iframe>
   </div>
-  <div class="navbar-container">
-    <div class="navbar-trigger">Hover here to see the navbar</div>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
+  <div align="center">
+<div class="menu">
+  <a href="/algebra/" title="backbutton" style="text-decoration:none;color:white;font-size:20px;margin:5px;"><i class="fa-solid fa-chevron-left"></i> Leave</a>
+  <a href="#" onclick="reloadFrame()" title="fc" style="text-decoration:none;color:white;font-size:20px;margin:9px;"><i class="fa-solid fa-rotate-right"></i> Reload</a>
+  <a href="#" onclick="toggleFC()" title="fc" style="text-decoration:none;color:white;font-size:20px;"><i class="fa-solid fa-expand"></i> Fullscreen</a>
+</div>
 </div>
 
-  <script>
-   backButton.addEventListener('click', () => {
-      window.history.back();
-    });
-  </script>
+<script>
+          function reloadFrame() {
+            var web = document.getElementById("gameFramey");
+            web.contentWindow.location.reload();
+            //web.src += ""
+          }
+  function toggleFC() {
+    let elem = document.querySelector('#gameFramey');
+
+    if (!document.fullscreenElement) {
+      elem.requestFullscreen().catch((err) => {
+        alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+</script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const src = urlParams.get('geometry');
