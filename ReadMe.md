@@ -1,7 +1,6 @@
-<p align="center"><img src="https://raw.githubusercontent.com/GalacticNetwork/astro-static/main/static/astro.png" height="200">
+<p align="center"><img src="https://i.yourimageshare.com/zLk2tGKpbW.png" height="100">
 </p>
-<h1 align="center">Astro</h1>
-<p align="center"><strong>Just the BETTER site.</strong></p>
+<h1 align="center"><strong>Just the BETTER site.</strong></h1>
 <h2 align="center">Astro is a upcoming AIO proxy website that runs on fast speeds on a VPS</h2>
 
 # Features:
@@ -33,6 +32,6 @@ and your done!
 
 <h1 align="center">Contributors</h1>
 <h2 align="center">Thanks to these people for contributing!</h2>
-<a href="https://github.com/GalacticNetwork/fantastic-octo-giggle/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GalacticNetwork/fantastic-octo-giggle" />
+<a href="https://github.com/GalacticNetwork/astro/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=GalacticNetwork/astro" />
 </a>

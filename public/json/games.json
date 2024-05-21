@@ -3,13 +3,13 @@
         "img": "/algebra/img/old1v1.avif",
         "title": "Old 1v1.lol",
         "description": "The old version of 1v1.lol, a 3rd person shooter game.",
-        "url": "/algebra/fractions.html?geometry=1v1-lol/new"
+        "url": "/algebra/fractions.html?geometry=1v1-lol/old"
     },
     {
         "img": "/algebra/img/1v1-lol.jpeg",
         "title": "New 1v1.lol",
         "description": "The new and updated version of 1v1.lol, a 3rd person shooter game.",
-        "url": "/algebra/fractions.html?geometry=1v1-lol/old"
+        "url": "/algebra/fractions.html?geometry=1v1-lol/new"
     },
     {
         "img": "/algebra/img/slope.jpeg",
