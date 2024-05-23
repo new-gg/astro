@@ -10,7 +10,7 @@
       say[1] = "Hello!";
       say[2] = "Does this even work?";
       say[3] = "Hey there bucko";
-      say[4] = "Astro just good.";
+      say[4] = "A proxy? With the games and apps? *moans loudly*";
       say[5] = "my name is astro!";
       say[6] = "Astrological!";
       say[7] = "Astronomy!";

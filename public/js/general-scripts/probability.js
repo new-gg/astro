@@ -5,29 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const gameContainer = document.querySelector('.game-container');
 
             data.forEach(game => {
-                const gameItem = document.createElement('div');
-                gameItem.classList.add('game-item');
-
-                const img = document.createElement('img');
-                img.src = game.img;
-                img.alt = game.title;
-
-                const title = document.createElement('h2');
-                title.textContent = game.title;
-
-                const description = document.createElement('p');
-                description.textContent = game.description;
-
-                // Add onclick event to redirect
-                gameItem.onclick = function() {
+                const imageContainer = document.createElement('div');
+                imageContainer.classList.add('image-container');
+                imageContainer.onclick = function() {
                     window.location.href = game.url;
                 };
 
-                gameItem.appendChild(img);
-                gameItem.appendChild(title);
-                gameItem.appendChild(description);
+                const img = document.createElement('img');
+                img.src = game.img;
+                img.alt = game.name; // Using game.name for alt text
+                img.classList.add('image');
 
-                gameContainer.appendChild(gameItem);
+                const overlay = document.createElement('div');
+                overlay.classList.add('overlay');
+                overlay.textContent = game.title; // Using game.name for overlay text
+
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(overlay);
+
+                gameContainer.appendChild(imageContainer);
             });
         })
         .catch(error => console.error('Error fetching the games data:', error));
