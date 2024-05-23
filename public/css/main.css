@@ -9,6 +9,7 @@ body {
 }
 
 .navbar {
+  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   top: 1%;
   backdrop-filter: blur(10px);
@@ -102,6 +103,7 @@ input::placeholder {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: flex-start;
+  margin:15px;
 }
 
 .game-item {
@@ -114,10 +116,13 @@ input::placeholder {
   margin-bottom: 20px;
   box-sizing: border-box;
   transition:0.8s;
+  padding: 0.01px;
+  user-select: none;
 }
 
 .game-item:hover {
-transform: translateY(-0.5rem);
+transform: translateY(-0.9rem);
+box-shadow: 0 5px 10px rgb(206, 99, 255);
 }
 
 

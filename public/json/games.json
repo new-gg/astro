@@ -24,9 +24,15 @@
         "url": "/algebra/fractions.html?geometry=mini-golf-master"
     },
     {
-        "img": "game4.jpg",
-        "title": "Game Title 4",
-        "description": "Brief description of Game 4...",
-        "url": "/algebra/fractions.html?geometry=1v1-lol/old"
+        "img": "/algebra/img/basketball-stars.jpg",
+        "title": "Basketball Stars",
+        "description": "A game where you cross people's ankles and play as your favorite characters from the NBA!",
+        "url": "/algebra/fractions.html?geometry=basketball-stars"
+    },
+    {
+        "img": "/algebra/img/brawlstars.png",
+        "title": "Brawl Stars",
+        "description": "A fake version of brawl stars, we couldn't get the real one. Just shoot people and get gems.",
+        "url": "/algebra/fractions.html?geometry=brawl-stars"
     }
 ]
