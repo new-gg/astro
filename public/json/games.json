@@ -48,5 +48,10 @@
         "img": "/algebra/img/achivement-unlocked-3.jpg",
         "title": "Achivement Unlocked 3",
         "url": "/algebra/fractions.html?geometry=achivement-unlocked/3"
+    },
+        {
+        "img": "/algebra/img/10mins.png",
+        "title": "10 Minutes Till Dawn",
+        "url": "/algebra/fractions.html?geometry=10-minutes-till-dawn"
     }
 ]
