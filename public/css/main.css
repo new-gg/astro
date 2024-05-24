@@ -108,7 +108,7 @@ input::placeholder {
 .image-container {
   position: relative;
   width: 300px;
-  height: 150px;
+  height: 175px;
   cursor: pointer;
   border-radius:5px;
   transition:0.6s;
