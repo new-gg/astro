@@ -2,37 +2,51 @@
     {
         "img": "/algebra/img/old1v1.avif",
         "title": "Old 1v1.lol",
-        "description": "The old version of 1v1.lol, a 3rd person shooter game.",
         "url": "/algebra/fractions.html?geometry=1v1-lol/old"
     },
     {
         "img": "/algebra/img/1v1-lol.jpeg",
         "title": "New 1v1.lol",
-        "description": "The new and updated version of 1v1.lol, a 3rd person shooter game.",
         "url": "/algebra/fractions.html?geometry=1v1-lol/new"
     },
     {
         "img": "/algebra/img/slope.jpeg",
         "title": "Slope",
-        "description": "An endless game where you roll a ball and avoid obstacles!",
         "url": "/algebra/fractions.html?geometry=slope"
     },
     {
         "img": "/algebra/img/mgm.avif",
         "title": "Mini Golf Master",
-        "description": "A mini golf game where you pass levels and gradually get to the last hole!",
         "url": "/algebra/fractions.html?geometry=mini-golf-master"
     },
     {
         "img": "/algebra/img/basketball-stars.jpg",
         "title": "Basketball Stars",
-        "description": "A game where you cross people's ankles and play as your favorite characters from the NBA!",
         "url": "/algebra/fractions.html?geometry=basketball-stars"
     },
     {
         "img": "/algebra/img/brawlstars.png",
         "title": "Brawl Stars",
-        "description": "A fake version of brawl stars, we couldn't get the real one. Just shoot people and get gems.",
         "url": "/algebra/fractions.html?geometry=brawl-stars"
+    },
+    {
+        "img": "/algebra/img/2048.jpg",
+        "title": "2048",
+        "url": "/algebra/fractions.html?geometry=2048"
+    },
+    {
+        "img": "/algebra/img/achivement-unlocked.jpg",
+        "title": "Achivement Unlocked",
+        "url": "/algebra/fractions.html?geometry=achivement-unlocked"
+    },
+    {
+        "img": "/algebra/img/achivement-unlocked-2.jpg",
+        "title": "Achivement Unlocked 2",
+        "url": "/algebra/fractions.html?geometry=achivement-unlocked/2"
+    },
+    {
+        "img": "/algebra/img/achivement-unlocked-3.jpg",
+        "title": "Achivement Unlocked 3",
+        "url": "/algebra/fractions.html?geometry=achivement-unlocked/3"
     }
 ]
