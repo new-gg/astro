@@ -3,8 +3,8 @@ self.__uv$config = {
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "/backendsystem/uv.handler.js",
-    client: "/uv/uv.client.js",
-    bundle: "/uv/uv.bundle.js",
-    config: "/uv/uv.config.js",
-    sw: "/uv/uv.sw.js",
+    client: "/backendsystem/uv.client.js",
+    bundle: "/backendsystem/uv.bundle.js",
+    config: "/backendsystem/uv.config.js",
+    sw: "/backendsystem/uv.sw.js",
   };
