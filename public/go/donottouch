@@ -10,3 +10,4 @@
   </script>
 sessionStorage.setItem("ur", __uv$config.prefix + __uv$config.encodeUrl(url))
         location.href = "/go.html"
+  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
