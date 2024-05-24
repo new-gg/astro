@@ -110,7 +110,7 @@ input::placeholder {
   width: 300px;
   height: 175px;
   cursor: pointer;
-  border-radius:5px;
+  border-radius:12px;
   transition:0.6s;
 }
 
