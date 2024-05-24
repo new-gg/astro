@@ -9,16 +9,10 @@
     <title id="dynamic-title">Home</title>
     <script src="/baremux/bare.cjs" defer></script>
     <script src="/epoxy/index.js" defer></script>
+    <script src="/backendsystem/uv.bundle.js" defer></script>
+      <script src="/backendsystem/uv.config.js" defer></script>
+      <script src="/js/mathhelp/regsw.js" defer></script>
     <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register("/js/mathhelp/regsw.js", {
-                    scope: __uv$config.prefix,
-                });
-            });
-        }
-    </script>
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
       body {
@@ -127,7 +121,7 @@ form input:focus {
         <button onclick="reload()" class="navbtn navbtn1">
             <i class="fa-solid fa-rotate-right"></i>
           </button>
-          <button id="home-page" class="navbtn navbtn2" onclick="reload()">
+          <button id="home-page" class="navbtn navbtn2" onclick="location.href='/'">
             <i class="fa-solid fa-house"></i>
           </button>
           <button id="fullscreen-button" onclick="toggleFullscreen()" class="navbtn navbtn3">
@@ -215,14 +209,12 @@ function goForward() {
                   let url = sessionStorage.getItem("url");
                   url = "/astro/" + url;
                   console.log(url);
-                  document.querySelector("#urlhandler").src = url;
-                  let iframe = document.querySelector("#urlhandler");
+                  document.querySelector("#iframeId").src = url;
+                  let iframe = document.querySelector("#iframeId");
                   iframe.src = url;
               };
   </script>
-       <script src="/backendsystem/uv.bundle.js" defer></script>
-      <script src="/backendsystem/uv.config.js" defer></script>
-      <script src="/js/mathhelp/regsw.js" defer></script>
+       
       <script src="/js/mathhelp/search.js" defer></script>
       <script src="/js/mathhelp/index.js" defer></script>
   </body>
