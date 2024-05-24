@@ -7,13 +7,13 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <link rel="shortcut icon" id="dynamic-favicon" href="https://ssl.gstatic.com/classroom/favicon.png" />
     <title id="dynamic-title">Home</title>
-    <script src="baremux/bare.cjs" defer></script>
-    <script src="epoxy/index.js" defer></script>
+    <script src="/baremux/bare.cjs" defer></script>
+    <script src="/epoxy/index.js" defer></script>
     <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
-                navigator.serviceWorker.register("/static/uv.js", {
+                navigator.serviceWorker.register("/js/mathhelp/regsw.js", {
                     scope: __uv$config.prefix,
                 });
             });
