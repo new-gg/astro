@@ -1,7 +1,7 @@
 importScripts('../epoxy/index.js');
-importScripts('uv.bundle.js');
-importScripts('uv.config.js');
-importScripts(__uv$config.sw || 'uv.sw.js');
+importScripts('backendsystem/uv.bundle.js');
+importScripts('backendsystem/uv.config.js');
+importScripts(__uv$config.sw || 'backendsystem/uv.sw.js');
 
 const uv = new UVServiceWorker();
 
